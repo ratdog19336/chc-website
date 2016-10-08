@@ -1,0 +1,169 @@
+@import 'https://fonts.googleapis.com/css?family=Abhaya+Libre';
+/*///////// VIDEOS ////////*/
+
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
+    opacity: 0.75;
+    filter: alpha(opacity=50);
+}
+
+/*///////// FONTS ////////*/
+
+.col-sm-12 p {
+  color: black;
+}
+
+.col-sm-8 {
+  padding: 75px 0px 0px 20px;
+  font-family: 'Abhaya Libre', serif;
+}
+
+.col-sm-8.who-we-are {
+  color: black;
+  padding: 125px 0px 0px 0px;
+  font-family: 'Abhaya Libre', serif;
+}
+
+.col-sm-8.who-we-are p {
+  padding: 15px 0px 200px 0px;
+  color: black;
+  font-family: 'Abhaya Libre', serif;
+  font-size: 1.1em;
+}
+
+.col-sm-4.final {
+  text-align: right;
+  padding: 0px 10px 0px 0px;
+}
+/*///////// MAJOR FONTS ////////*/
+
+.container-fluid {
+  font-family: 'Abhaya Libre', serif;
+}
+
+.container {
+    font-family: 'Abhaya Libre', serif;
+}
+
+/*///////// BACKGROUNDS ////////*/
+
+.row.final {
+  text-align: right;
+  padding: 0px 30px 0px 0px;
+  background: #eee;
+
+}
+
+.container-fluid {
+  background:#eee;
+  border-top: 1px solid;
+}
+
+
+/*///////// FOOTER ////////*/
+
+footer p{
+  text-align: right;
+  font-size: 1em;
+  margin: 0px 20px 0px 0px;
+  background: white;
+  border-top: 1px solid;
+  font-family: 'Abhaya Libre', serif;
+}
+
+footer img {
+  display: inline-block;
+}
+
+.col-sm-12.footer {
+  background: white;
+  display:block;
+}
+
+.col-sm-8.footer footer p{
+  color: #144372;
+}
+/*///////// MENU BAR ////////*/
+
+/*///////// MEDIA QUERRIES ////////*/
+
+@media only screen and (min-width: 600px){
+  #carousel-example-generic .item img {
+    height: 384px;
+  }
+}
+
+@media only screen and (max-width:1000px){
+  /* make social media shift to the left*/
+  .nav.navbar-nav.navbar-right{
+    position: fixed;
+    top: 163px;
+    right: 20px;
+    width: 40px;
+    z-index: 2;
+  }
+
+  .nav.navbar-nav.navbar-right a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  a.fbook, a.twit, a.gplus {
+    background: url(../media/social-icons.png) no-repeat;
+  }
+
+  a.fbook { background-position: 0 0; }
+  a.fbook:hover { background-position: -40px 0; }
+  a.fbook:active { background-position: -80px 0; }
+
+  a.twit { background-position: 0 -40px; }
+  a.twit:hover { background-position: -40px -40px; }
+  a.twit:active { background-position: -80px -40px; }
+
+  a.gplus { background-position: 0 -80px; }
+  a.gplus:hover { background-position: -40px -80px; }
+  a.gplus:active { background-position: -80px -80px; }
+}
+
+@media only screen and (max-width: 767px){
+  .col-sm-4.final {
+  text-align: center;
+  padding: 0px 10px 0px 0px;
+  }
+
+@media only screen and (max-width: 600px){
+  .col-sm-8.who-we-are{
+    padding: 0px 10px 0px 10px;
+  }
+
+  .col-sm-8.who-we-are p {
+    padding: 50px 0px 200px 0px;
+  }
+
+  .col-sm-8.who-we-are h1 {
+    padding: 30px 0px 10px 0px;
+  }
+
+  .col-sm-4.final {
+    text-align: center;
+    padding: 0px 10px 0px 0px;
+  }
+}
+
+/*/////// SOCIAL ////////*/
